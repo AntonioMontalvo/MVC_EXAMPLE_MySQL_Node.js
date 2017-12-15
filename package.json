@@ -1,0 +1,16 @@
+{
+  "name": "MVC_MySQLNodejs",
+  "version": "1.0.0",
+  "description": "An application using MVC MySQL and Node.js with ORM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Antonio Montalvo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mysql": "^2.15.0"
+  }
+}

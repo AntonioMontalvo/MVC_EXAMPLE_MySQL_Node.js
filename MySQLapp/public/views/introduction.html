@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+	<ul class="nav nav-pills">
+        <li class="nav-item to-left"><a class="nav-link" href="/">Welcome to MVC</a></li>
+        <li class="nav-item to-left"><a class="nav-link" href="/addCymbal">Add cymbal</a></li>
+        
+    </ul>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Cymbals on my wish list!</h1>
+			<a href="/api/"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span>Show all cymbals in json format</button></a>
+			<!-- <a href="/add"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-plus"></span> Add New Character</button></a> -->
+		</div>
+		<div class="row">
+
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>All cymbals in our database html view!</strong></h3>
+					</div>
+					<div class="panel-body" id="Selection">
+				
+					<!-- Content will go in here -->
+
+					</div>
+				</div>
+			</div>	
+
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Cymbal Search</strong></h3>
+					</div>
+					<div class="panel-body">
+						<input type="text" id="cymbalSearch" class="form-control" >
+						
+						<div class="text-right">
+							<button type="submit" class="btn btn-primary btn-md" id="searchBtn"><span class="glyphicon glyphicon-search"></span> Search a brand of cymbals in your wish List</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>These are the brands available in your search!</strong></h3>
+					</div>
+					<div class="panel-body" id="SearchedCymbals">
+				
+					<!-- Content will go in here -->
+
+					</div>
+				</div>
+			</div>	
+			
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><strong>Your first match in your search</strong></h3>
+					</div>
+					<div class="panel-body">
+						<div class="well">
+
+							<div id="searchResult">
+								<h1><strong>Brand:</strong> <span id="brand"></span></h1>
+								<h3><strong>Name:</strong> <span id="name"></span></h3>
+								<h3><strong>Diameter:</strong> <span id="diameter"></span></h3>
+								<h3><strong>Model:</strong> <span id="model"></span></h3>
+								<h3><strong>Price:</strong> <span id="price"></span></h3>
+							</div>
+						</div>
+					</div>
+			</div>	
+
+		</div>
+	</div>
+	
+<!-- Custom Script -->
+<script src="../js/drumsLogic.js" type="text/javascript"></script>
+
+</body>
+</html>
