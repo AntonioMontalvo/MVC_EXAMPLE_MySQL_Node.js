@@ -49,5 +49,5 @@ app.use(function(req, res) {
 
 
 app.listen(process.env.PORT || 8080, function() {
-    console.log("app listening on port 3000!. Go to http://localhost:8080"); //confirm app is listening
+    console.log("app listening on port 8080!. Go to http://localhost:8080"); //confirm app is listening
 });
