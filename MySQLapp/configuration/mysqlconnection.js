@@ -5,9 +5,9 @@ Here is where you make the connection to the database and export and used by the
 */
 var mysql = require('mysql');
 
-//JAWSDB Connection String
+//JAWSDB Connection String this string contains in order. The username then password then the host port and at the end the database.
 
-//mysql:f11t56lxnvggniy7:a8ntvfa6aa15zrcr@tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/w8b2citrb56o7d2w
+//mysql://f11t56lxnvggniy7:xylsu889ul2jln2e@tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/w8b2citrb56o7d2w
 
 
 
@@ -27,7 +27,8 @@ var source = {
         port: 3306,
         host: 'tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         user: 'f11t56lxnvggniy7',
-        password: "a8ntvfa6aa15zrcr",
+        password: "xylsu889ul2jln2e",
+        database: 'w8b2citrb56o7d2w'
     }
 }
 
